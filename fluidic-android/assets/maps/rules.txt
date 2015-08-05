@@ -1,0 +1,2 @@
+# Collision layer generation
+./autorules/collision_rule.tmx

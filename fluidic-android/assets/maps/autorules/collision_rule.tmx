@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="3" height="3" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" source="../tilesets/Simple.tsx"/>
+ <tileset firstgid="2" source="../tilesets/regiondef.tsx"/>
+ <layer name="regions" width="3" height="3">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA
+  </data>
+ </layer>
+ <layer name="input_foreground" width="3" height="3">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA
+  </data>
+ </layer>
+ <layer name="output_collision" width="3" height="3" opacity="0">
+  <data encoding="base64">
+   AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA
+  </data>
+ </layer>
+</map>

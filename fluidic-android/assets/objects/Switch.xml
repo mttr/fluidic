@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Object xmlns="http://www.zzntd.com/XMLObjectSchema"
+    	name="objects.SwitchObject"
+    	defined="true"
+    	prefix="com.zzntd.fluidic."
+    	priority="MID"> <!-- Can be: HIGH/MID/LOW/NONE. Default: MID -->
+    <DrawableComponent texture="images/simpleswitch.png"
+        default_animation="not_activated">
+        <Animation frame_duration="10" 
+            name="not_activated" 
+            frame_count="1" 
+            play_mode="LOOP" 
+            animation_duration="10" 
+            frame_width="32" 
+            frame_height="32" 
+            start_y="0" 
+            start_x="0"/>
+        <Animation frame_duration="10" 
+            name="activated" 
+            frame_count="1" 
+            play_mode="LOOP" 
+            animation_duration="10" 
+            frame_width="32" 
+            frame_height="32" 
+            start_y="0" 
+            start_x="32"/>
+    </DrawableComponent>
+</Object>

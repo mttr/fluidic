@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LevelSet xmlns="http://www.zzntd.com/XMLObjectSchema">
+    <Level normalLimit="10" stickyLimit="0" bridgeLimit="0">intro.tmx</Level>
+    <Level normalLimit="30" stickyLimit="0" bridgeLimit="0">platforms.tmx</Level>
+    <Level normalLimit="50" stickyLimit="22" bridgeLimit="0">wall_climbing_intro.tmx</Level>
+    <Level normalLimit="100" stickyLimit="25" bridgeLimit="0">fancy_climbing.tmx</Level>
+    <Level normalLimit="50" stickyLimit="0" bridgeLimit="40">bridge_intro.tmx</Level>
+    <Level normalLimit="100" stickyLimit="33" bridgeLimit="12">fancy_bridges.tmx</Level>
+</LevelSet>

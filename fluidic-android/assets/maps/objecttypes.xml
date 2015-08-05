@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objecttypes>
+ <objecttype name="Player" color="#55aaff"/>
+ <objecttype name="Collision" color="#aa0000"/>
+</objecttypes>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Object xmlns="http://www.zzntd.com/XMLObjectSchema"
+    	name="objects.PlatformObject"
+    	defined="true"
+    	prefix="com.zzntd.fluidic."
+    	priority="MID"> <!-- Can be: HIGH/MID/LOW/NONE. Default: MID -->
+    <DrawableComponent texture="images/simpleplatform.png"
+        width="96"
+        height="32">
+    </DrawableComponent>
+</Object>

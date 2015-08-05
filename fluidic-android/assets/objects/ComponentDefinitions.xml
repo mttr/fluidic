@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Object xmlns="http://www.zzntd.com/XMLObjectSchema"    
+    	name="name"
+    	prefix="com.zzntd.fluidic."
+    	priority="MID" 
+    	defined="false"> <!-- Priority: Can be: HIGH/MID/LOW/NONE. Default: MID -->
+    <goop.GoopPhysicsComponent active="true" />
+    <physics.PhysicsComponent active="true" 
+        solid="true" />
+    <!-- Default true -->
+    <DrawableComponent texture="" 
+        x="0"
+        y="0"
+        width="32"
+        height="32"/>
+    <DirectionalInputComponent />    
+</Object>

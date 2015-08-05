@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Object xmlns="http://www.zzntd.com/XMLObjectSchema"
+    	name="objects.DoorObject"
+    	defined="true"
+    	prefix="com.zzntd.fluidic."
+    	priority="MID"> <!-- Can be: HIGH/MID/LOW/NONE. Default: MID -->
+    <DrawableComponent texture="images/simpledoor.png"
+        default_animation="closed"
+        width="64"
+        height="64">
+        <Animation frame_duration="10" 
+            name="closed" 
+            frame_count="1" 
+            play_mode="LOOP" 
+            animation_duration="10" 
+            frame_width="64" 
+            frame_height="64" 
+            start_y="0" 
+            start_x="0"/>
+        <Animation frame_duration="10" 
+            name="open" 
+            frame_count="1" 
+            play_mode="LOOP" 
+            animation_duration="10" 
+            frame_width="64" 
+            frame_height="64" 
+            start_y="0" 
+            start_x="64"/>
+    </DrawableComponent>
+</Object>

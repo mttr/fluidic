@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="30" height="10" tilewidth="32" tileheight="32">
+ <objectgroup name="Basic Object Definitions" width="30" height="10">
+  <object name="Player" type="Object" x="96" y="96" width="32" height="32"/>
+  <object name="Wall" type="Collision" x="160" y="96" width="32" height="32"/>
+  <object name="Switch" type="Object" x="96" y="160" width="32" height="32"/>
+  <object name="Door" type="Object" x="224" y="96" width="64" height="64"/>
+  <object name="Platform" type="Object" x="320" y="96" width="96" height="32">
+   <properties>
+    <property name="travel_distance" value="4"/>
+    <property name="up" value="true"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

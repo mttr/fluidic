@@ -1,0 +1,7 @@
+profiling/
+*/bin/
+*/.settings/
+*/gen/
+.metadata*
+*hs_err*
+eclipse_prefs/

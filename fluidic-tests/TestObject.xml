@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Object xmlns="http://www.zzntd.com/XMLObjectSchema"
+    	name="name"
+    	prefix="com.zzntd.fluidic."
+    	priority="HIGH">
+    <goop.GoopPhysicsComponent active="true" />
+    <physics.PhysicsComponent active="true" />
+    <DirectionalInputComponent />    
+</Object>

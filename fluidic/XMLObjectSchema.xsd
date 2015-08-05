@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="http://www.zzntd.com/XMLObjectSchema"
+	elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.zzntd.com/XMLObjectSchema">
+
+	<element name="goop.GoopPhysicsComponent" type="tns:PhysicsComponent"></element>
+
+	<element name="physics.PhysicsComponent"
+		type="tns:PhysicsComponent">
+	</element>
+
+	<element name="DrawableComponent" type="tns:DrawableComponent"></element>
+
+	<element name="DirectionalInputComponent"
+		type="tns:DirectionalInputComponent">
+	</element>
+		
+    <complexType name="DirectionalInputComponent"></complexType>
+
+    <complexType name="PhysicsComponent">
+    	<attribute name="active" type="boolean"></attribute>
+    	<attribute name="solid" type="boolean"></attribute>
+    </complexType>
+
+    <complexType name="DrawableComponent">
+    	<sequence>
+    		<element name="Animation" type="tns:Animation" minOccurs="0" maxOccurs="unbounded"/>
+    	</sequence>
+    	<attribute name="texture" type="string"></attribute>
+    	<attribute name="x" type="int"></attribute>
+    	<attribute name="y" type="int"></attribute>
+    	<attribute name="width" type="int"></attribute>
+    	<attribute name="height" type="int"></attribute>
+    	<attribute name="default_animation" type="string"/>
+    </complexType>
+
+    <complexType name="Object">
+    	<sequence>
+    		<any minOccurs="0" maxOccurs="unbounded"></any>
+    	</sequence>
+    	<attribute name="name" type="string"></attribute>
+    	<attribute name="prefix" type="string"></attribute>
+    	<attribute name="priority" type="tns:Priority"></attribute>
+    	<attribute name="defined" type="boolean"></attribute>
+    </complexType>
+
+    <element name="Object" type="tns:Object"></element>
+
+    <group name="MainGroup">
+    	<sequence>
+    		<element ref="tns:DirectionalInputComponent"></element>
+    		<element ref="tns:physics.PhysicsComponent"></element>
+    	</sequence>
+    </group>
+
+    <element name="SwitchComponent" type="tns:PhysicsComponent"></element>
+
+    <complexType name="Animation">
+    	<attribute name="name" use="required"/>
+ 	  	<attribute name="frame_width" type="int" use="required"/>
+    	<attribute name="frame_height" type="int" use="required"/>
+    	<attribute name="start_x" type="int" use="required"/>
+    	<attribute name="start_y" type="int" use="required"/>
+    	<attribute name="animation_duration" type="float" use="required"/>
+    	<attribute name="frame_duration" type="float" use="required"/>
+    	<attribute name="play_mode" type="tns:PlayMode" use="required"/>
+    	<attribute name="frame_count" type="int" use="required"/>   	    	
+    </complexType>
+
+    <simpleType name="Priority">
+    	<restriction base="string">
+    	    <enumeration value="HIGH"/>
+    		<enumeration value="MID"/>
+    		<enumeration value="LOW"/>
+    		<enumeration value="NONE"/>
+    	</restriction>
+    </simpleType>
+    
+    <simpleType name="PlayMode">
+    	<restriction base="string">
+    		<enumeration value="LOOP"/>
+    		<enumeration value="LOOP_PINGPONG"/>
+    		<enumeration value="LOOP_RANDOM"/>
+    		<enumeration value="LOOP_REVERSED"/>
+    		<enumeration value="NORMAL"/>
+    		<enumeration value="REVERSED"/>
+    	</restriction>
+    </simpleType>
+
+    <element name="Animation" type="tns:Animation"></element>
+
+    <complexType name="Level" mixed="true">
+    	<sequence>
+    		<any minOccurs="0" maxOccurs="unbounded"></any>
+    	</sequence>
+    	<attribute name="normalLimit" type="int" use="required"></attribute>
+    	<attribute name="stickyLimit" type="int" use="required"></attribute>
+    	<attribute name="bridgeLimit" type="int" use="required"></attribute>
+    </complexType>
+
+    <element name="Level" type="tns:Level"></element>
+
+    <element name="LevelSet" type="tns:Object"></element>
+</schema>
